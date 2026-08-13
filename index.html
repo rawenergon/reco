@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Reco</title>
+    
+    <!-- Cool Geometric Favicon (SVG) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2310b981'/%3E%3Cpath d='M30 30 H70 V70 H30 Z' fill='none' stroke='white' stroke-width='8'/%3E%3Ccircle cx='50' cy='50' r='12' fill='white'/%3E%3Cpath d='M50 20 V30 M50 70 V80 M20 50 H30 M70 50 H80' stroke='white' stroke-width='6'/%3E%3C/svg%3E">
+
+    <!-- NEW FONT: Outfit -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'media',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Outfit', 'sans-serif'], // Updated Font
+            },
+            colors: {
+              surface: {
+                50: '#fafafa',
+                100: '#f5f5f5',
+                200: '#e5e5e5',
+                800: '#262626',
+                900: '#171717',
+                950: '#0a0a0a',
+              },
+              content: {
+                primary: 'var(--content-primary)',
+                secondary: 'var(--content-secondary)',
+                inverted: 'var(--content-inverted)',
+              }
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-out',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      :root {
+        --content-primary: #171717;
+        --content-secondary: #737373;
+        --content-inverted: #ffffff;
+      }
+      
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --content-primary: #f5f5f5;
+          --content-secondary: #a3a3a3;
+          --content-inverted: #000000;
+        }
+      }
+
+      body {
+        background-color: #fafafa;
+        color: #171717;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: #0a0a0a;
+          color: #f5f5f5;
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "date-fns": "https://aistudiocdn.com/date-fns@^4.1.0",
+    "vite": "https://aistudiocdn.com/vite@^7.2.4",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "jsqr": "https://aistudiocdn.com/jsqr@^1.4.0",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1",
+    "@supabase/supabase-js": "https://aistudiocdn.com/@supabase/supabase-js@^2.84.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

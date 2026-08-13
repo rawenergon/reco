@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Local environment (localhost only - never commit)
+.env
+.env.local
+.env.*.local
+
+# Backup/secret files
+env_backup.txt
+
+# Prompt/history exports
+migrated_prompt_history/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db

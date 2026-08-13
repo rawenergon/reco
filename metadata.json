@@ -1,0 +1,9 @@
+{
+  "name": "RECO FINAL",
+  "description": "Minimalist AI face recognition attendance system.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ],
+  "majorCapabilities": []
+}
